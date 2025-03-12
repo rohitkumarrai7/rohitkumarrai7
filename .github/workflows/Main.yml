@@ -11,16 +11,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  # This workflow contains a single job called "build"
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Generate the snake contribution animation
       - name: Generate GitHub Contributions Snake Animations
         uses: Platane/snk@v3
         with:
@@ -30,15 +27,10 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
             dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
 
-      # Step 3: Show the status of the repository (for debugging)
-      - name: Show Git Status
-        run: git status
-
-      # Step 4: Push the generated files to the 'output' branch
       - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GH_PAT }}  # Use Personal Access Token instead of GITHUB_TOKEN
+          personal_token: ${{ secrets.GH_PAT }}  # Use PAT instead of GITHUB_TOKEN
           publish_dir: ./dist
           publish_branch: output
           commit_message: "Update GitHub contribution snake animation [skip ci]"
