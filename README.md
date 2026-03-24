@@ -29,6 +29,9 @@ Hi 👋, I'm Rohit Kumar Rai<br>A passionate Frontend Developer & AI Enthusiast 
 ## 🏆 GitHub Trophies:
 ![](https://github-profile-trophy.vercel.app/?username=rohitkumarrai7&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
+## 🐍 Contribution Snake:
+![github contribution grid snake animation](https://github.com/rohitkumarrai7/rohitkumarrai7/blob/output/github-contribution-grid-snake.svg)
+
 ---
 [![](https://visitcount.itsvg.in/api?id=rohitkumarrai7&icon=0&color=0)](https://visitcount.itsvg.in)
 
