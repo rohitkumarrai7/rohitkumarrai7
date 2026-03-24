@@ -27,8 +27,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git checkout -b output 2>/dev/null || git checkout output
-          mkdir -p dist
-          cp -r dist/* . 2>/dev/null || true
+          cp dist/github-contribution-grid-snake.svg .
           git add .
           git commit -m "Generate snake animation" --allow-empty
           git push origin output
